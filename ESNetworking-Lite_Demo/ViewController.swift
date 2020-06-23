@@ -34,7 +34,10 @@ class ViewController: UIViewController {
     @IBAction func runPostRequest(_ sender: UIButton) {
         
         let requestModel = PostsPostRequest()
-        ESNetworking_Lite().request(baseUrl: baseUrl, requestModel: requestModel) { (result: Result<PostModel, ESRequestError>) in
+        
+        ESNetworking_Lite().request(baseUrl: baseUrl, requestModel: requestModel, progressHandler: { (progress) in
+            print(progress)
+        }) { (result: Result<PostModel, ESRequestError>) in
             switch result {
             case .success(let model):
                 print(model)

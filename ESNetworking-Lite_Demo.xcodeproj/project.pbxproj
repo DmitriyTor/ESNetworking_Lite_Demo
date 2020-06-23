@@ -395,7 +395,7 @@
 			repositoryURL = "https://github.com/ESKARIA/ESNetworking-Lite.git";
 			requirement = {
 				kind = revision;
-				revision = 28a96af8fbeaa14ce64157e2c4a75b62a87de51e;
+				revision = 4a7be95394cf9fc507f77d2bf31c04498d239f2f;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
